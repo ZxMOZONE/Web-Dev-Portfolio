@@ -12,10 +12,11 @@
 }
 
 body {
-  background-image: url("../Images/001_background-neon-circuit-board.jpg");
+  /* background-image: url("../Images/001_background-neon-circuit-board.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background: var(--bg-color);
   color: var(--font-color-def);
 }
 
@@ -75,9 +76,10 @@ body {
   color: var(--font-color-alt);
 }
 
-.home-content p {
+.home-content .summary {
   font-size: 16px;
   margin: 20px 0 40px;
+  text-align: justify;
 }
 
 .home-content .btn-box {
@@ -184,4 +186,37 @@ body {
 
 .home-sci a:hover::before {
   width: 100%;
+}
+
+.other {
+  max-width: 600px;
+}
+
+.other h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.other h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--font-color-alt);
+}
+
+.details {
+  width: 800px;
+  position: absolute;
+  text-align: justify;
+  top: 250px;
+  left: 850px;
+}
+
+li {
+  list-style-position: outside;
+  width: 740px;
+}
+
+span {
+  color: var(--font-color-alt);
 }
